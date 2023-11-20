@@ -8,7 +8,7 @@ export class ApiUrlService {
 
   constructor() { }
 
-  getApiUrl(){
+  getApiUrl() {
     return environment.API_URL;
   }
 }
