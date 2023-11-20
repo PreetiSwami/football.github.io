@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="head">
+        <h5>Football Updates</h5>
+    </div>
+    <div class="navBar">
+        <div class="menu" *ngFor="let country of countries" routerLinkActive="active">
+            <a [attr.id]="(country.countryName | lowercase)  + 'Select'" [routerLink]="['standingleague',country.countryName,country.leagueId]" class="nav-link">
+            {{country.countryName}}</a>
+
+
+        </div>
+
+    </div>
+
+
+</div>
